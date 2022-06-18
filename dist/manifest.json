@@ -1,0 +1,41 @@
+﻿{
+  "manifest_version": 3,
+  "name": "HZPX Extension",
+  "version": "0.0.1",
+  "icons": {
+    "48": "48.png",
+    "128": "128.png"
+  },
+ "action": {
+    "default_title": "Click to view a popup",
+    "default_popup": "popup.html"
+  },
+  "description": "Preview Offtext with hzpx support",
+  "homepage_url": "https://github.com/accelon/hzpx-engine",
+  "short_name": "hzpx-ext",
+
+  "author": "yapcheahshen",
+
+  "minimum_chrome_version": "92",
+  "options_page": "options.html",
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+
+  "background": {
+    "service_worker": "worker.js",
+    "type": "module"
+  },
+
+  "content_scripts": [{
+    "matches": [
+      "http://*/*",
+      "https://*/*",
+      "file://*/*"
+    ],
+    "js": [
+      "content.js"
+    ]
+  }]
+}

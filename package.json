@@ -1,0 +1,24 @@
+{
+  "name": "hzpx-extension",
+  "version": "0.0.1",
+  "description": "browser extension for Hzpx",
+  "main": "index.js",
+  "devDependencies": {
+    "hzpx-engine":"https://github.com/accelon/hzpx-engine"
+  },
+  "scripts": {
+    "test": "node test.js",
+    "build":"esbuild index.ts --format=cjs --bundle --outfile=dist/hzpx.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/accelon/hzpx-extension.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/accelon/hzpx-extension/issues"
+  },
+  "homepage": "https://github.com/accelon/hzpx-extension#readme"
+}

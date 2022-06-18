@@ -1,0 +1,1 @@
+esbuild --bundle --format=esm  index.ts --outfile=dist/hzpx.js

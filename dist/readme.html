@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="data:;base64,=">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>汉字拼形组字系统</title>
+    <style>
+      .hzpx {display: flex}  /* 用 flex 去除多余的空白*/
+      .bigfortune {font-size: 3em} 
+      .sunzi  {font-size: 1.5em ; color: brown; }
+      .chu    {font-size:  2em; color: gray;}
+    </style>
+  </head>
+  <body>
+    <h2>汉字拼形 浏览器扩充程序 演示</h2>
+    先下載 <a target=_new href="https://github.com/accelon/hzpx-engine/releases/">擴充程序hzpx-extension-20220618.zip 或更新版本</a> 
+
+<pre>安装方法：
+1) 将此安装包解到任意目录。必須有manifest.json 文件才是正确的包。
+2) 点Chrome 右上角 三个垂点，「更多工具」→「扩展程序」
+3) 右上角勾选「开发者模式」
+4) 左上角「加载已解压的扩展程序」，
+5) 选取该目录。
+6) 看到「招财进宝」I图示即成功。
+</pre>
+    扩充程序安装成功後，所有网页( *.html , *.htm )皆可自动处理含有css className "hzpx" 的元素。
+    本地的纯文本也可以使用。只生成 E,F,G 扩区。
+    <div class="bigfortune hzpx">︻邏羅寶貝𩀨從䞃致招︼</div>
+    <div class="hzpx">CJK 扩A㐀B𠀀C𪜀D𫝀E𫠠F𬺰G𰀀</div>
+    <div class="chu hzpx">「初」常被写成「︻初衤礻︼」</div>
+    <br/>欢迎到<a target=_new href="https://forum.freemdict.com/u/accelon">FreeMdict</a>提出建议。
+  </body>
+</html>
