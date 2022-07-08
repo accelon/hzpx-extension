@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "node test.js",
-    "build":"esbuild index.ts --format=cjs --bundle --outfile=dist/hzpx.js"
+    "build":"esbuild index.ts --format=esm --bundle --outfile=dist/hzpx.js",
+    "dev":"esbuild index.ts --watch --format=esm --bundle --outfile=dist/hzpx.js"
   },
   "repository": {
     "type": "git",
